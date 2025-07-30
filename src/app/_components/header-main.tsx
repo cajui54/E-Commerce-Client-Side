@@ -1,5 +1,7 @@
+import { Menu } from 'lucide-react';
 import React from 'react';
-import { LinkLogo, LogoImage } from './logo-image-link';
+import { SlHandbag } from 'react-icons/sl';
+
 import {
   Sheet,
   SheetContent,
@@ -8,10 +10,10 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
-import { SlHandbag } from 'react-icons/sl';
-import NavbarMobile from './navbar-mobile';
+
+import { LinkLogo, LogoImage } from './logo-image-link';
 import NavbarDesktop from './navbar-desktop';
+import NavbarMobile from './navbar-mobile';
 
 const HeaderMain = () => {
   return (

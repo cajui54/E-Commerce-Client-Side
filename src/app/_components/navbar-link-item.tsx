@@ -1,17 +1,10 @@
 'use client';
-import React from 'react';
-import { NavbarItem } from '../constants/options-navbar';
 import Link from 'next/link';
-import { CatIcon, DogIcon, FishIcon, Home } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import React from 'react';
 import { tv } from 'tailwind-variants';
 
-export const icons = {
-  home: Home,
-  dog: DogIcon,
-  cat: CatIcon,
-  fish: FishIcon,
-};
+import { icons, NavbarItem } from '../constants/options-navbar';
 
 const iconVariantes = tv({
   base: 'w-3.5 rounded-3xl',

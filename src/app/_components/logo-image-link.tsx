@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import Link from 'next/link';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import React, { ReactNode } from 'react';
 import { tv } from 'tailwind-variants';
 interface LinkLogoProps {
   children: ReactNode;

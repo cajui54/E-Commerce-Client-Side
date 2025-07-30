@@ -3,23 +3,33 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative mx-auto flex h-[200px] w-[95%] flex-col items-start justify-center gap-y-5 overflow-hidden rounded-md bg-gradient-to-b from-gray-300 via-gray-200 to-gray-50 px-4 shadow-sm sm:w-4/5 lg:ml-4">
-      <div className="w-fit">
-        <h1 className="text-brand-primary text-center text-5xl font-black">
+    <div className="relative mx-auto flex h-[200px] w-[95%] items-center justify-between overflow-hidden rounded-md bg-gray-200 shadow-2xs sm:w-[600px] lg:mx-auto lg:w-4/5 lg:justify-start">
+      <div className="relative z-30 flex h-full w-4/5 flex-col items-center justify-center bg-gradient-to-l from-transparent via-emerald-200 to-emerald-300 shadow-2xs">
+        <h1 className="text-center text-5xl font-black text-neutral-800 text-shadow-2xs lg:text-6xl">
           PetsShop
         </h1>
-        <p className="-mt-2 ml-2 font-bold text-neutral-900">
+        <p className="-mt-2 font-bold text-white text-shadow-lg">
           Tudo para seus Pets
         </p>
       </div>
-      <Image
-        src={'/dog-pug.png'}
-        alt="dog pug"
-        height={0}
-        width={0}
-        sizes="100vw"
-        className="absolute -top-10 -right-36 h-[400px] w-[500px]"
-      />
+      <div className="absolute w-full">
+        <Image
+          src={'/petshop.png'}
+          alt="dog pug"
+          height={0}
+          width={0}
+          sizes="100vw"
+          className="h-[500px] w-full"
+        />
+        <Image
+          src={'/dog_cat_etc-removebg.png'}
+          alt="dog pug"
+          height={0}
+          width={0}
+          sizes="100vw"
+          className="absolute -right-23 -bottom-1 z-20 h-[400px] w-[300px]"
+        />
+      </div>
     </div>
   );
 };
