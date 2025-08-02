@@ -1,5 +1,5 @@
 import { BirdIcon, CatIcon, DogIcon, FishIcon, Home } from 'lucide-react';
-type icons = {
+export type iconsTypes = {
   home: string;
   dog: string;
   cat: string;
@@ -10,7 +10,7 @@ type icons = {
 export interface NavbarItem {
   label: string;
   href: string;
-  iconName: keyof icons;
+  iconName: keyof iconsTypes;
 }
 
 export const icons = {

@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 import { tv } from 'tailwind-variants';
 
-import { icons, NavbarItem } from '../constants/options-navbar';
+import { icons, NavbarItem } from '../_constants/options-navbar';
 
 const iconVariantes = tv({
   base: 'w-3.5 rounded-3xl',

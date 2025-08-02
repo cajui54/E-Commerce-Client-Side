@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { navbarItems } from '../constants/options-navbar';
+import { navbarItems } from '../_constants/options-navbar';
 import NavbarLinkItem from './navbar-link-item';
 
 const NavbarDesktop = () => {
