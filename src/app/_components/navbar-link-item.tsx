@@ -19,7 +19,7 @@ const iconVariantes = tv({
   },
 });
 const linkVariantes = tv({
-  base: 'font-brand-poppins flex items-center gap-2 py-1 tracking-widest transition duration-700 ease-in-out',
+  base: 'font-brand-roboto text-xs flex items-center gap-2 py-1 tracking-widest transition duration-700 ease-in-out',
   variants: {
     color: {
       isActive: 'text-emerald-500 font-bold  hover:text-neutral-800',

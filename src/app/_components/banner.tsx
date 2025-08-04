@@ -10,10 +10,10 @@ const Banner = ({ title, image }: BannerProps) => {
     <div>
       <div className="mx-auto my-8 flex h-[200px] w-[95%] items-center overflow-hidden rounded-3xl bg-linear-to-r from-emerald-300 via-emerald-200 to-transparent drop-shadow-sm lg:ml-10 lg:max-w-[800px] lg:justify-between">
         <div className="flex h-full flex-col items-start justify-center pl-5">
-          <h3 className="ml-2 w-[170px] text-lg font-medium text-gray-600 italic">
+          <h3 className="text-brand-primary ml-2 w-[170px] text-lg font-medium italic">
             Descontos para seu
           </h3>
-          <h2 className="-mt-2 text-4xl font-bold text-gray-700">{title}</h2>
+          <h2 className="-mt-2 text-4xl font-bold text-neutral-700">{title}</h2>
         </div>
         <Image
           src={image}

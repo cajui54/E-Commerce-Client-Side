@@ -38,7 +38,7 @@ const ProductItem = (product: Product) => {
               width={0}
               height={0}
               sizes="100wv"
-              className="h-[150px] w-fit transition-all duration-100 ease-linear hover:scale-110"
+              className="h-[150px] w-fit drop-shadow-lg drop-shadow-neutral-900 transition-all duration-100 ease-linear hover:scale-110"
             />
           </div>
 
