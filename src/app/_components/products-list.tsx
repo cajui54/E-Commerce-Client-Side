@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import {
   Carousel,
@@ -10,6 +10,7 @@ import {
 import { Product } from '@/generated/prisma';
 
 import ProductItem from './product-item';
+import SkeletonProductItem from './skeleton-product-item';
 
 interface ProductListProps {
   products: Product[];
@@ -27,7 +28,9 @@ const ProductsList = ({ products }: ProductListProps) => {
         <CarouselContent>
           {products.map((product) => (
             <CarouselItem key={product.id}>
-              <ProductItem {...product} />
+              <Suspense fallback={<SkeletonProductItem />}>
+                <ProductItem {...product} />
+              </Suspense>
             </CarouselItem>
           ))}
         </CarouselContent>

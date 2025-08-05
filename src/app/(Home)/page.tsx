@@ -7,6 +7,7 @@ import imgDogPug from '@/_assets/images/dog-pug02.png';
 
 import AsideBanner from '../_components/aside-banner';
 import Banner from '../_components/banner';
+import Footer from '../_components/footer';
 import HeaderMain from '../_components/header-main';
 import Hero from '../_components/hero';
 import NavbarCategory from '../_components/navbar-category';
@@ -14,7 +15,6 @@ import ProductsList from '../_components/products-list';
 import SkeletonNavbarCategory from '../_components/skeleton-navbar-category';
 import { getAllByDeals } from '../_data-access/product/get-All-by-deals';
 import { getProductsByCategoryAndDeal } from '../_data-access/product/get-by-category-and-deal';
-import prisma from '../_libs/prisma';
 
 export default async function Home() {
   const productsDeals = await getAllByDeals();
@@ -41,7 +41,7 @@ export default async function Home() {
 
           <div className="mx-auto my-2.5 w-[90%] space-y-7">
             <h3 className="font-brand-poppins text-brand-primary text-4xl font-bold">
-              Ofertas para seu Gato
+              Ofertas Dog da semana
             </h3>
             <ProductsList products={dogDeals} />
           </div>
@@ -50,7 +50,7 @@ export default async function Home() {
 
           <div className="mx-auto my-2.5 w-[90%] space-y-7">
             <h3 className="font-brand-poppins text-brand-primary text-4xl font-bold">
-              Ofertas para seu Gato
+              Ofertas Cat da semana
             </h3>
             <ProductsList products={catDeals} />
           </div>
@@ -73,6 +73,7 @@ export default async function Home() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
