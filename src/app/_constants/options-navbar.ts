@@ -22,8 +22,8 @@ export const icons = {
 };
 export const navbarItems: NavbarItem[] = [
   { label: 'Home', href: '/', iconName: 'home' },
-  { label: 'Cachorro', href: '/dog', iconName: 'dog' },
-  { label: 'Gato', href: '/cat', iconName: 'cat' },
-  { label: 'Peixe', href: '/fish', iconName: 'fish' },
-  { label: 'Passaro', href: '/bird', iconName: 'bird' },
+  { label: 'Cachorro', href: '/pages/category-products/dog', iconName: 'dog' },
+  { label: 'Gato', href: '/pages/category-products/cat', iconName: 'cat' },
+  { label: 'Peixe', href: '/pages/category-products/fish', iconName: 'fish' },
+  { label: 'Passaro', href: '/pages/category-products/bird', iconName: 'bird' },
 ];

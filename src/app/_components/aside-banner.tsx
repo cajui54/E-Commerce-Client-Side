@@ -11,7 +11,7 @@ interface AsideBannerProps {
 
 const AsideBanner = ({ image, title, subtitle }: AsideBannerProps) => {
   return (
-    <aside className="relative mx-auto mt-12 mr-5 flex h-[200px] w-11/12 justify-end overflow-hidden rounded-2xl bg-red-300 drop-shadow-lg lg:h-[500px] lg:w-[300px] lg:flex-col">
+    <aside className="relative mx-auto mt-12 mr-5 flex h-[200px] w-11/12 justify-end overflow-hidden rounded-2xl drop-shadow-lg lg:h-[500px] lg:w-[300px] lg:flex-col">
       <div className="absolute -left-7 h-full w-4/5 lg:left-0 lg:w-full">
         <Image
           src={image}

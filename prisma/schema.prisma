@@ -13,7 +13,7 @@ model Product {
   id String @id @default(uuid())
   name String @unique
   brand String
-  slug String
+  slug String @unique
   description String
   basePrice Decimal @db.Decimal(8,2)
   discountPercentage Int           @default(0)

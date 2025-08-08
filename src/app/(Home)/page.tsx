@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Suspense } from 'react';
+import { ImSpinner9 } from 'react-icons/im';
 
 import imgCatPug from '@/_assets/images/cat.png';
 import imgDogAndChildren from '@/_assets/images/children_and_pug.png';
@@ -22,7 +23,6 @@ export default async function Home() {
   const catDeals = await getProductsByCategoryAndDeal('cat');
   return (
     <div className="h-full w-full space-y-2">
-      <HeaderMain />
       <Hero />
       <Suspense fallback={<SkeletonNavbarCategory />}>
         <NavbarCategory />
@@ -73,6 +73,7 @@ export default async function Home() {
           />
         </div>
       </div>
+
       <Footer />
     </div>
   );

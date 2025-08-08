@@ -1,6 +1,9 @@
+import './globals.css';
+
 import type { Metadata } from 'next';
 import { Oxygen, Poppins, Roboto } from 'next/font/google';
-import '../globals.css';
+
+import HeaderMain from './_components/header-main';
 
 const oxygen = Oxygen({
   subsets: ['latin'],
@@ -45,6 +48,7 @@ export default function RootLayout({
       <body
         className={`${oxygen.variable} ${poppins.variable} ${roboto.variable} antialiased`}
       >
+        <HeaderMain />
         {children}
       </body>
     </html>
