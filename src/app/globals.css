@@ -128,3 +128,7 @@ html {
     @apply bg-background text-foreground h-full w-full;
   }
 }
+
+button {
+  @apply cursor-pointer select-none;
+}

@@ -9,7 +9,7 @@ interface SlideImageProps {
 const SlideImage = ({ images, name }: SlideImageProps) => {
   const [selectedImage, setSelectedImage] = React.useState(images[0]);
   return (
-    <div className="lg:flex">
+    <div className="w-full lg:flex lg:w-3/5">
       <div className="mx-auto mt-11 flex h-[300px] w-11/12 items-center justify-center">
         <Image
           src={selectedImage}
