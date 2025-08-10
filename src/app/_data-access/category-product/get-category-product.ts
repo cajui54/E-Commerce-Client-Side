@@ -1,7 +1,7 @@
 'use server';
 
-import prisma from '@/app/_libs/prisma';
+import { prismaClient } from '@/lib/prisma';
 
 export const getCategoryProduct = async () => {
-  return await prisma.categoryProduct.findMany({});
+  return await prismaClient.categoryProduct.findMany({});
 };

@@ -1,9 +1,9 @@
 'use server';
 
-import prisma from '@/app/_libs/prisma';
+import { prismaClient } from '@/lib/prisma';
 
 export const getAllByDeals = async () => {
-  return await prisma.product.findMany({
+  return await prismaClient.product.findMany({
     where: {
       discountPercentage: {
         gt: 0,

@@ -1,9 +1,9 @@
 'use server';
 
-import prisma from '@/app/_libs/prisma';
+import { prismaClient } from '@/lib/prisma';
 
 export const getAllProductByCategory = async (slug: string) => {
-  return prisma.product.findMany({
+  return prismaClient.product.findMany({
     where: {
       category: {
         slug,
