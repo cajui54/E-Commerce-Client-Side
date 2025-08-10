@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 
 import imgCatPug from '@/_assets/images/cat.png';
-import imgDogAndChildren from '@/_assets/images/children_and_pug.png';
 import imgDogPug from '@/_assets/images/dog-pug02.png';
 
 import AsideBanner from '../_components/aside-banner';

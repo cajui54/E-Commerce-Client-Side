@@ -1,10 +1,10 @@
+import { Product } from '@prisma/client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { BsCart4 } from 'react-icons/bs';
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Product } from '@/generated/prisma';
 
 import BadgeDiscountPercentage from './badge-discount-percentage';
 import PanelPrice from './panel-price';

@@ -17,7 +17,9 @@ const ManagerAmount = ({ idProduct }: { idProduct: string }) => {
   const handleDecrement = () => {
     setAmount((prev) => (prev > 1 ? prev - 1 : 1));
   };
-  const handleAddOrder = () => {};
+  const handleAddOrder = () => {
+    console.log(idProduct);
+  };
   return (
     <div>
       <div className="flex w-fit items-center gap-3 rounded-2xl p-2">
@@ -41,7 +43,7 @@ const ManagerAmount = ({ idProduct }: { idProduct: string }) => {
         </Button>
       </div>
       <div className="my-5 space-y-2 sm:w-[350px]">
-        <Button className="w-4/5 cursor-pointer">
+        <Button className="w-4/5 cursor-pointer" onClick={handleAddOrder}>
           <GiDogBowl />
           Comprar agora
         </Button>

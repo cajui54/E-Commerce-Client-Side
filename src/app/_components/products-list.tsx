@@ -1,3 +1,4 @@
+import { Product } from '@prisma/client';
 import React, { Suspense } from 'react';
 
 import {
@@ -7,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Product } from '@/generated/prisma';
 
 import ProductItem from './product-item';
 import SkeletonProductItem from './skeleton-product-item';

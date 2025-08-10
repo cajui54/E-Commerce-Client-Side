@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import React from 'react';
 
 import AsideBanner from '@/app/_components/aside-banner';
-import BadgeDiscountPercentage from '@/app/_components/badge-discount-percentage';
 import PanelPrice from '@/app/_components/panel-price';
 import ProductsList from '@/app/_components/products-list';
 import { getAllProductByCategory } from '@/app/_data-access/product/get-all-product-by-category';
