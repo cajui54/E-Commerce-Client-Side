@@ -1,21 +1,35 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { tv } from 'tailwind-variants';
 
+import cat from '@/_assets/images/cat.png';
+import dogPug from '@/_assets/images/dog-pug02.png';
 import { Button } from '@/components/ui/button';
+
 interface AsideBannerProps {
   title: string;
   subtitle: string;
-  image: StaticImageData;
+  slug: string;
 }
-
-const AsideBanner = ({ image, title, subtitle }: AsideBannerProps) => {
+const asideVariants = tv({
+  base: 'relative h-[200px] flex w-11/12 justify-end overflow-hidden rounded-2xl drop-shadow-lg ',
+  variants: {
+    responsive: {
+      lg: 'lg:h-[500px] lg:w-[300px] lg:flex-col',
+    },
+  },
+  defaultVariants: {
+    responsive: 'lg',
+  },
+});
+const AsideBanner = ({ title, subtitle, slug }: AsideBannerProps) => {
   return (
-    <aside className="relative mx-auto mt-12 mr-5 flex h-[200px] w-11/12 justify-end overflow-hidden rounded-2xl drop-shadow-lg lg:h-[500px] lg:w-[300px] lg:flex-col">
+    <aside className={asideVariants()}>
       <div className="absolute -left-7 h-full w-4/5 lg:left-0 lg:w-full">
         <Image
-          src={image}
-          alt="dog pug and girl"
+          src={slug === 'cat' ? cat : dogPug}
+          alt={title}
           height={0}
           width={0}
           sizes="100vw"

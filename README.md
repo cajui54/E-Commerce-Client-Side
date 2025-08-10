@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## E-Commerce E-Pet
 
-## Getting Started
-
-First, run the development server:
+E-Pet é um e-commerce web site onde é exibido produtos relacionado aos pets, onde é permitido consultar produtos, adicionar ao carrinho e realizar compra
 
 ```bash
 npm run dev

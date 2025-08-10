@@ -18,7 +18,7 @@ interface ProductListProps {
 
 const ProductsList = ({ products }: ProductListProps) => {
   return (
-    <div className="w-full lg:w-[880px]">
+    <div className="relative z-30 w-full lg:w-[880px]">
       <Carousel
         opts={{
           align: 'start',

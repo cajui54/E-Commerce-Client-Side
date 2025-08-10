@@ -4,7 +4,7 @@ import { CiLinkedin } from 'react-icons/ci';
 
 const Footer = () => {
   return (
-    <footer className="flex h-[90px] w-full items-center justify-center shadow-2xl shadow-neutral-900">
+    <footer className="flex w-full items-center justify-center border-t border-neutral-200 py-3">
       <div>
         <Link
           href={''}

@@ -2,15 +2,24 @@
 import Image from 'next/image';
 import React from 'react';
 
+import BadgeDiscountPercentage from '@/app/_components/badge-discount-percentage';
+
 interface SlideImageProps {
   images: string[];
   name: string;
+  discountPercentage: number;
 }
-const SlideImage = ({ images, name }: SlideImageProps) => {
+const SlideImage = ({ images, name, discountPercentage }: SlideImageProps) => {
   const [selectedImage, setSelectedImage] = React.useState(images[0]);
   return (
     <div className="w-full lg:flex lg:w-3/5">
-      <div className="mx-auto mt-11 flex h-[300px] w-11/12 items-center justify-center">
+      <div className="relative mx-auto mt-11 flex h-[300px] w-11/12 items-center justify-center">
+        <div className="absolute -top-8 left-[100px]">
+          {discountPercentage > 0 && (
+            <BadgeDiscountPercentage discountPercentage={discountPercentage} />
+          )}
+        </div>
+
         <Image
           src={selectedImage}
           alt={name}

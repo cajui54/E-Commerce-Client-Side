@@ -3,21 +3,21 @@ import Link from 'next/link';
 import React from 'react';
 import { BsCart4 } from 'react-icons/bs';
 
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Product } from '@/generated/prisma';
 
+import BadgeDiscountPercentage from './badge-discount-percentage';
 import PanelPrice from './panel-price';
 
 const ProductItem = (product: Product) => {
   return (
-    <Link href={`pages/details-product/${product.slug}`}>
+    <Link href={`/pages/details-product/${product.slug}`}>
       <Card className="bg-neutral-200 p-0 shadow-lg shadow-neutral-300">
         <CardContent className="relative flex h-[300px] w-[190px] flex-col justify-between px-3 py-2 sm:w-[200px]">
           {product.discountPercentage > 0 && (
-            <Badge className="absolute right-2 bg-emerald-600">
-              {product.discountPercentage}%
-            </Badge>
+            <BadgeDiscountPercentage
+              discountPercentage={product.discountPercentage}
+            />
           )}
           <div className="mt-2 flex h-[150px] items-center justify-center">
             <Image

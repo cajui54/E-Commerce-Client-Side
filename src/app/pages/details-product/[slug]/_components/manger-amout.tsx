@@ -7,7 +7,7 @@ import { TiShoppingCart } from 'react-icons/ti';
 
 import { Button } from '@/components/ui/button';
 
-const ManagerAmount = () => {
+const ManagerAmount = ({ idProduct }: { idProduct: string }) => {
   const [amount, setAmount] = React.useState(1);
 
   const handleIncrement = () => {
@@ -17,7 +17,7 @@ const ManagerAmount = () => {
   const handleDecrement = () => {
     setAmount((prev) => (prev > 1 ? prev - 1 : 1));
   };
-
+  const handleAddOrder = () => {};
   return (
     <div>
       <div className="flex w-fit items-center gap-3 rounded-2xl p-2">
@@ -45,6 +45,7 @@ const ManagerAmount = () => {
           <GiDogBowl />
           Comprar agora
         </Button>
+
         <Button className="w-4/5 cursor-pointer bg-emerald-500">
           <TiShoppingCart />
           Adicionar ao Carrinho

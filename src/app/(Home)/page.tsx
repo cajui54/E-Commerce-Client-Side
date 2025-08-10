@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Suspense } from 'react';
-import { ImSpinner9 } from 'react-icons/im';
 
 import imgCatPug from '@/_assets/images/cat.png';
 import imgDogAndChildren from '@/_assets/images/children_and_pug.png';
@@ -9,7 +8,6 @@ import imgDogPug from '@/_assets/images/dog-pug02.png';
 import AsideBanner from '../_components/aside-banner';
 import Banner from '../_components/banner';
 import Footer from '../_components/footer';
-import HeaderMain from '../_components/header-main';
 import Hero from '../_components/hero';
 import NavbarCategory from '../_components/navbar-category';
 import ProductsList from '../_components/products-list';
@@ -57,11 +55,9 @@ export default async function Home() {
         </div>
 
         <div className="flex w-fit flex-col justify-between">
-          <AsideBanner
-            image={imgDogAndChildren}
-            title="Banho & Tosa"
-            subtitle="20% off"
-          />
+          <div className="mt-12 lg:ml-11">
+            <AsideBanner slug="dog" title="Banho & Tosa" subtitle="20% off" />
+          </div>
 
           <Image
             src={'/dog_cat_etc-removebg.png'}
@@ -73,7 +69,6 @@ export default async function Home() {
           />
         </div>
       </div>
-
       <Footer />
     </div>
   );

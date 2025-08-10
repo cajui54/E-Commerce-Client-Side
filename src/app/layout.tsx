@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Oxygen, Poppins, Roboto } from 'next/font/google';
 
+import Footer from './_components/footer';
 import HeaderMain from './_components/header-main';
 
 const oxygen = Oxygen({
