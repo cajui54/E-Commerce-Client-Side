@@ -6,7 +6,6 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "prepare": "prisma generate",
     "lint": "next lint"
   },
   "prisma": {

@@ -28,3 +28,9 @@ DevOps:
 - ⚙️ Git / Github
 - 📤 Deploy: Vercel
 - 🧼 ESLint + Prettier
+
+🧠 Boas práticas e arquitetura
+
+- Patterns: Repository, Factory
+- Estrutura modular e escalável
+- Conversion Commits
